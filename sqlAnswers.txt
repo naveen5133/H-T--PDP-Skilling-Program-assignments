@@ -1,0 +1,83 @@
+Q01-select First_Name as worker_Name from Worker;
+
+Q02-select upper(First_Name) from Worker;
+
+Q03-select distinct(Department) from Worker;
+
+Q04-select substring(First_Name,1,3) from worker;
+
+Q05-select position('a' in 'Amitabh') as position;
+
+Q06-select rtrim(First_Name) from worker;
+
+Q07-select ltrim(Department) from worker;
+
+Q08-select distinct(length(Department)) from worker;
+
+Q09-select replace(First_Name,'a','A') from worker;
+
+Q10-select concat(First_Name,' ',Last_Name) from worker;
+
+Q11-select * from worker order by First_Name;
+
+Q12-
+
+Q13-select * from worker where First_Name="Vipul" or First_Name="Satish";
+
+Q14-select * from worker where First_Name!="Vipul" and First_Name!="Satish";
+
+Q15-select * from worker where Department='Admin';
+
+Q16-select * from worker where First_Name like 'a%';
+
+Q17-select * from worker where First_Name like '%a';
+
+Q18-select * from worker where First_Name like '%h' and length(First_Name)=6;
+
+Q19-select * from worker where salary>=100000 and salary<=500000;
+
+Q20-select * from worker where Joining_Date like '2014-20%';
+
+Q21-select count(Department) from worker where Department='Admin';
+
+Q22-select * from worker where salary>=500000 or salary<=100000;
+
+Q23-select count(Worker_ID),Department from worker group by Department order by Department desc;
+
+Q24-
+
+Q25-
+
+Q26-select * from worker where Mod(Worker_ID,2)<>0;
+
+Q27-select *from worker where Mod(Worker_ID,2)=0;
+
+Q28-create table workertable_clone select * from worker;
+     select * from workertable_clone;
+
+Q29-
+
+Q30-select * from worker where worker_ID not In(select Worker_ref_ID from Bonus;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
